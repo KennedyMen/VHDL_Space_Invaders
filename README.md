@@ -42,11 +42,9 @@ This project is an implementation of the classic Space Invaders game using VHDL 
 
 ## Screenshots
 
-### Basic Setup
-![Basic Schematic Setup](https://i.ibb.co/QvWS4Xs/Screenshot-2024-05-15-at-6-24-08-AM.png)
 
 ### VGA Display Schematic
-![VGA Display Schematic](https://i.ibb.co/fM4XPm0/schematic-of-path.png)
+![VGA Display Schematic]([[https://i.ibb.co/fM4XPm0/schematic-of-path.png])
 
 ## License
 
