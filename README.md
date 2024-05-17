@@ -44,7 +44,7 @@ This project is an implementation of the classic Space Invaders game using VHDL 
 
 
 ### VGA Display Schematic
-![VGA Display Schematic](https://ibb.co/4JsNv2L)
+![VGA Display Schematic]([https://i.ibb.co/TrKhj1G/schematic-of-pong-top-st.png])
 
 ## License
 
