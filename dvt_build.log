@@ -1,0 +1,129 @@
+*** Start analyzing build configuration ***
+INFO: Auto-config - Scanning: /Users/033103kennedymensah/Downloads/FINAL/VHDL
+INFO: Auto-config - VHDL: /Users/033103kennedymensah/Downloads/FINAL/VHDL
+INFO: Auto-config - Wrote:
+    .dvt/default.build.auto.1
+*** List of included argument files ***
+    Build configuration file:  /Users/033103kennedymensah/Downloads/FINAL/VHDL/.dvt/default.build
+    -f /Users/033103kennedymensah/Downloads/FINAL/VHDL/.dvt/default.build.auto.1
+*** List of invocations ***
+Invocation #1 +dvt_init+dvt in /Users/033103kennedymensah/Downloads/FINAL/VHDL/.dvt/default.build.auto.1 at line 9
+*** Warning: BUILD_CONFIG: [AUTO] Multiple entity declarations
+    at line 18 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/.dvt/default.build.auto.1:18
+*** Done analyzing build configuration [107 ms] ***
+
+*** Start VHDL build ***
+*** Invocation #1***
+Loading (1) /Users/033103kennedymensah/Downloads/FINAL/VHDL/VGA_sync.vhd ...
+Done /Users/033103kennedymensah/Downloads/FINAL/VHDL/VGA_sync.vhd [9 ms, 130 lines, VHDL_2008] ...
+Loading (2) /Users/033103kennedymensah/Downloads/FINAL/VHDL/Counter2.vhd ...
+Done /Users/033103kennedymensah/Downloads/FINAL/VHDL/Counter2.vhd [4 ms, 270 lines, VHDL_2008] ...
+Loading (3) /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_graph_st_HW7_MENSAH.vhd ...
+Done /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_graph_st_HW7_MENSAH.vhd [11 ms, 689 lines, VHDL_2008] ...
+Loading (4) /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_top_st.vhd ...
+Done /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_top_st.vhd [2 ms, 67 lines, VHDL_2008] ...
+Loading (5) /Users/033103kennedymensah/Downloads/FINAL/VHDL/pong_top_1_MENSAH.vhd ...
+Done /Users/033103kennedymensah/Downloads/FINAL/VHDL/pong_top_1_MENSAH.vhd [2 ms, 80 lines, VHDL_2008] ...
+Loading (6) /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_top_st_MENSAH.vhd ...
+Done /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_top_st_MENSAH.vhd [4 ms, 78 lines, VHDL_2008] ...
+Loading (7) /Users/033103kennedymensah/Downloads/FINAL/VHDL/pong_top_2.vhd ...
+Done /Users/033103kennedymensah/Downloads/FINAL/VHDL/pong_top_2.vhd [1 ms, 1 lines, VHDL_2008] ...
+*** Done invocation #1 [37 ms] ***
+*** Done parsing [425 ms] ***
+*** Total number of lines [1 315] ***
+Performing post full build step 1 (VHDL - RU) [15 ms] ...
+*** Files summary [7 total, 7 unique] ***
+*** Done VHDL build [441 ms] ***
+
+*** Start mixed mode extension build ***
+Performing mixed post full build step (VHDL - RU) [2 ms] ...
+Performing mixed post full build step (VHDL - RT) [221 ms] ...
+*** Warning: UNSPECIFIED_TOP: Please specify a -top module/entity/configuration in the project build file
+*** Top design candidates: work.pong_top_st
+Performing mixed post full build step (MIXED - ELAB) [137 ms] ...
+Performing mixed post full build step (MIXED - UNEL) [4 ms] ...
+*** Error: MISSING_PORT_CONNECTION: Instance 'counter_disp_unit' of entity 'counter_disp' is missing port connection to input 'kill_cnt'
+    at line 51 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_top_st_MENSAH.vhd:51 [compile index 6]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'hit_cnt' is not a member of 'counter_disp_unit'
+    at line 53 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_top_st_MENSAH.vhd:53 [compile index 6]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'sq_hit_cnter_on_output' is not a member of 'counter_disp_unit'
+    at line 53 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_top_st_MENSAH.vhd:53 [compile index 6]
+*** Warning: MISSING_PORT_CONNECTION: Instance 'pong_grf_st_unit' of entity 'pong_graph_st' is missing port connection to output 'kill_cnt'
+    at line 41 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_top_st_MENSAH.vhd:41 [compile index 6]
+*** Warning: MISSING_PORT_CONNECTION: Instance 'counter_disp_unit' of entity 'counter_disp' is missing port connection to output 'sq_kill_cnter_on_output'
+    at line 51 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_top_st_MENSAH.vhd:51 [compile index 6]
+*** Warning: SENSITIVITY_UNUSED: The process is not sensitive to 'bar_x_r'
+    at line 364 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_graph_st_HW7_MENSAH.vhd:364 [compile index 3]
+*** Warning: SENSITIVITY_UNUSED: The process is not sensitive to 'bar_x_l'
+    at line 364 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_graph_st_HW7_MENSAH.vhd:364 [compile index 3]
+*** Warning: SENSITIVITY_UNUSED: The process is not sensitive to 'btn'
+    at line 364 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_graph_st_HW7_MENSAH.vhd:364 [compile index 3]
+*** Warning: SENSITIVITY_MISSING: Missing 'bool_lr' from sensitivity list
+    at line 368 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_graph_st_HW7_MENSAH.vhd:368 [compile index 3]
+*** Warning: SENSITIVITY_MISSING: Missing 'bar_x_l' from sensitivity list
+    at line 563 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_graph_st_HW7_MENSAH.vhd:563 [compile index 3]
+*** Warning: SENSITIVITY_MISSING: Missing 'bar_x_r' from sensitivity list
+    at line 563 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_graph_st_HW7_MENSAH.vhd:563 [compile index 3]
+*** Warning: SENSITIVITY_MISSING: Missing 'x_RThree_delta_reg' from sensitivity list
+    at line 574 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_graph_st_HW7_MENSAH.vhd:574 [compile index 3]
+*** Warning: SENSITIVITY_UNUSED: The process is not sensitive to 'bar_x_reg'
+    at line 595 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_graph_st_HW7_MENSAH.vhd:595 [compile index 3]
+*** Warning: UNELABORATED_ENTITY: Entity 'work.pong_top_st' is not elaborated
+    at line 4 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_top_st.vhd:4 [compile index 4]
+*** Warning: MISSING_PORT_CONNECTION: Instance 'pong_grf_st_unit' of entity 'pong_graph_st' is missing port connection to output 'hit_cnt, kill_cnt'
+    at line 36 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_top_st.vhd:36 [compile index 4]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'hit_cnt' is not a member of 'counter_disp_unit'
+    at line 55 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/pong_top_1_MENSAH.vhd:55 [compile index 5]
+*** Error: UNDECLARED_IDENTIFIER: Identifier 'sq_hit_cnter_on_output' is not a member of 'counter_disp_unit'
+    at line 55 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/pong_top_1_MENSAH.vhd:55 [compile index 5]
+*** Warning: UNELABORATED_ENTITY: Entity 'work.pong_top_st' is not elaborated
+    at line 4 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/pong_top_1_MENSAH.vhd:4 [compile index 5]
+*** Warning: MISSING_PORT_CONNECTION: Instance 'counter_disp_unit' of entity 'counter_disp' is missing port connection to output 'sq_kill_cnter_on_output'
+    at line 53 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/pong_top_1_MENSAH.vhd:53 [compile index 5]
+Performing mixed post full build step (VHDL - RD) [2 ms] ...
+Performing mixed post full build step (VHDL - US) [9 ms] ...
+Performing mixed post full build step (VHDL - USBD) [55 ms] ...
+*** Warning: DUPLICATE_ENTITY: Duplicate entity 'pong_top_st' already declared
+    at line 4 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_top_st.vhd
+    at line 4 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/pong_top_1_MENSAH.vhd:4 [compile index 5]
+*** Warning: DUPLICATE_ENTITY: Duplicate entity 'pong_top_st' already declared
+    at line 4 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_top_st.vhd
+    at line 4 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_top_st_MENSAH.vhd:4 [compile index 6]
+*** Warning: SIGNAL_MULTIPLE_DRIVERS: Signal 'RONE_x_next' has multiple drivers
+    at line 70 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_graph_st_HW7_MENSAH.vhd:70 [compile index 3]
+*** Warning: SIGNAL_MULTIPLE_DRIVERS: Signal 'RONE_y_next' has multiple drivers
+    at line 71 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_graph_st_HW7_MENSAH.vhd:71 [compile index 3]
+*** Warning: SIGNAL_MULTIPLE_DRIVERS: Signal 'RThree_x_next' has multiple drivers
+    at line 93 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_graph_st_HW7_MENSAH.vhd:93 [compile index 3]
+*** Warning: SIGNAL_MULTIPLE_DRIVERS: Signal 'RThree_y_next' has multiple drivers
+    at line 94 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_graph_st_HW7_MENSAH.vhd:94 [compile index 3]
+*** Warning: SIGNAL_NEVER_USED: Signal 'x_delta_firing_reg' is never used
+    at line 135 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_graph_st_HW7_MENSAH.vhd:135 [compile index 3]
+*** Warning: SIGNAL_NEVER_USED: Signal 'x_delta_firing_next' is never used
+    at line 135 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_graph_st_HW7_MENSAH.vhd:135 [compile index 3]
+*** Warning: SIGNAL_NEVER_USED: Signal 'y_delta_firing_reg' is never used
+    at line 136 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_graph_st_HW7_MENSAH.vhd:136 [compile index 3]
+*** Warning: SIGNAL_NEVER_USED: Signal 'y_delta_firing_next' is never used
+    at line 136 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_graph_st_HW7_MENSAH.vhd:136 [compile index 3]
+*** Warning: SIGNAL_NEVER_READ: Signal 'FIRING_BALL_V_P' is never read
+    at line 137 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_graph_st_HW7_MENSAH.vhd:137 [compile index 3]
+*** Warning: SIGNAL_NEVER_READ: Signal 'ZERO' is never read
+    at line 238 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_graph_st_HW7_MENSAH.vhd:238 [compile index 3]
+*** Warning: SIGNAL_NEVER_USED: Signal 'blank' is never used
+    at line 10 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_top_st.vhd:10 [compile index 4]
+*** Warning: SIGNAL_NEVER_READ: Signal 'hit_cnt' is never read (connected to sub-instance output port)
+    at line 21 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/pong_top_1_MENSAH.vhd:21 [compile index 5]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'sq_hit_cnter_on' is never written
+    at line 23 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/pong_top_1_MENSAH.vhd:23 [compile index 5]
+*** Warning: SIGNAL_NEVER_USED: Signal 'vga_pixel_tick' is never used
+    at line 11 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/pong_top_1_MENSAH.vhd:11 [compile index 5]
+*** Warning: SIGNAL_NEVER_READ: Signal 'hit_cnt' is never read (connected to sub-instance output port)
+    at line 21 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_top_st_MENSAH.vhd:21 [compile index 6]
+*** Warning: SIGNAL_NEVER_USED: Signal 'kill_cnt' is never used
+    at line 22 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_top_st_MENSAH.vhd:22 [compile index 6]
+*** Warning: SIGNAL_NEVER_WRITTEN: Signal 'sq_hit_cnter_on' is never written
+    at line 23 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_top_st_MENSAH.vhd:23 [compile index 6]
+*** Warning: SIGNAL_NEVER_USED: Signal 'vga_pixel_tick' is never used
+    at line 11 in /Users/033103kennedymensah/Downloads/FINAL/VHDL/Pong_top_st_MENSAH.vhd:11 [compile index 6]
+*** Done mixed mode extension build [437 ms] ***
+*** Total build time [994 ms] ***
